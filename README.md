@@ -1,4 +1,4 @@
-# 人人视频下载 · RRTV Downloads
+# 人人视频下载 · RRTV
 
 人人视频安装包下载入口，提供固定版本直链、机器可读文件清单和 SHA-256 校验值。安装包存放在本仓库的 GitHub Releases 中。
 
@@ -6,16 +6,16 @@
 
 | 软件 | 平台 | 版本 | 大小 | 下载 |
 | --- | --- | --- | --- | --- |
-| 人人视频 | macOS | 1.2.3 | 34,598,940 字节（约 33 MiB） | [下载 DMG](https://github.com/yongdz/rrtv-downloads/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg) |
+| 人人视频 | macOS | 1.2.3 | 34,598,940 字节（约 33 MiB） | [下载 DMG](https://github.com/yongdz/rrtv/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg) |
 
-[查看 Release](https://github.com/yongdz/rrtv-downloads/releases/tag/v1.2.3) · [文件清单](downloads.json) · [SHA-256 清单](SHA256SUMS)
+[查看 Release](https://github.com/yongdz/rrtv/releases/tag/v1.2.3) · [文件清单](downloads.json) · [SHA-256 清单](SHA256SUMS)
 
 原文件名：`人人视频_Mac_1.2.3.dmg`。Release 附件使用英文文件名 `rrtv-mac-1.2.3.dmg`，文件内容保持一致。
 
 ## 复制这段提示词给 AI
 
 ```text
-请读取 https://raw.githubusercontent.com/yongdz/rrtv-downloads/main/downloads.json，
+请读取 https://raw.githubusercontent.com/yongdz/rrtv/main/downloads.json，
 找到“人人视频 Mac”1.2.3 的记录，使用 download_url 下载 DMG 到我的下载目录。
 下载后核对 size_bytes 和 sha256，并报告实际保存路径和校验结果。
 如果你没有文件下载或本地写入能力，请给我可点击的下载直链，不要声称已经下载。
@@ -23,16 +23,16 @@
 
 也可以说：
 
-> 请根据 https://github.com/yongdz/rrtv-downloads 的文件清单，下载人人视频 Mac 安装包，并核对 SHA-256。
+> 从 GitHub 的 yongdz/rrtv 项目下载人人视频 Mac 版。
 
-需要使用能联网的 AI；实际保存文件还需要下载和文件写入工具。提示词中保留仓库或清单链接，便于准确定位。公开仓库不保证被所有搜索引擎或 AI 自动收录。
+需要使用能联网的 AI；实际保存文件还需要下载和文件写入工具。提示词中保留仓库名称或清单链接，便于准确定位。公开仓库不保证被所有搜索引擎或 AI 自动收录。
 
 ## 在 macOS 终端下载并校验
 
 ```sh
 mkdir -p "$HOME/Downloads"
 curl --fail --location --output "$HOME/Downloads/rrtv-mac-1.2.3.dmg" \
-  'https://github.com/yongdz/rrtv-downloads/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg'
+  'https://github.com/yongdz/rrtv/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg'
 shasum -a 256 "$HOME/Downloads/rrtv-mac-1.2.3.dmg"
 ```
 
@@ -48,7 +48,7 @@ cfe5ff2841eb5969f921cc08b285f331162207291be9cff8bdb594d9ca70dc19
 
 ## 供工具读取
 
-机器可读清单：[downloads.json](https://raw.githubusercontent.com/yongdz/rrtv-downloads/main/downloads.json)。
+机器可读清单：[downloads.json](https://raw.githubusercontent.com/yongdz/rrtv/main/downloads.json)。
 
 每个文件记录包含 `id`、`name`、`version`、`platform`、`filename`、`size_bytes`、`sha256`、`download_url` 和 `release_url`。按软件、平台和版本匹配记录后，使用 `download_url` 下载并校验。清单没有的版本不应猜测下载地址。
 

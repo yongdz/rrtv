@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "repository": "https://github.com/yongdz/rrtv-downloads",
+  "repository": "https://github.com/yongdz/rrtv",
   "updated_at": "2026-10-21",
   "files": [
     {
@@ -17,8 +17,8 @@
       "original_filename": "人人视频_Mac_1.2.3.dmg",
       "size_bytes": 34598940,
       "sha256": "cfe5ff2841eb5969f921cc08b285f331162207291be9cff8bdb594d9ca70dc19",
-      "download_url": "https://github.com/yongdz/rrtv-downloads/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg",
-      "release_url": "https://github.com/yongdz/rrtv-downloads/releases/tag/v1.2.3"
+      "download_url": "https://github.com/yongdz/rrtv/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg",
+      "release_url": "https://github.com/yongdz/rrtv/releases/tag/v1.2.3"
     }
   ]
 }
