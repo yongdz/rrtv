@@ -31,7 +31,7 @@
 
 可直接复制的精确提示词：
 
-> 读取 https://raw.githubusercontent.com/yongdz/rrtv/main/downloads.json，下载其中适用于 Windows 的安装包；如果我指定了版本，就匹配该版本，否则选择仓库收录的 Windows 最新版，并校验 SHA-256。
+> 读取 <https://raw.githubusercontent.com/yongdz/rrtv/main/downloads.json>，下载其中适用于 Windows 的安装包；如果我指定了版本，就匹配该版本，否则选择仓库收录的 Windows 最新版，并校验 SHA-256。
 
 每条记录提供平台、版本、原始文件名、大小、摘要、固定版本下载直链和来源。ID 在清单内唯一；新增历史记录时使用新的 ID。安装包放在 **Releases**，不是 GitHub 自动生成的 `Source code.zip` / `tar.gz`。
 
