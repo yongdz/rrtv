@@ -1,8 +1,97 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/yongdz/rrtv",
-  "updated_at": "2026-10-21",
+  "project_name": "rrtv",
+  "application_name": "人人视频",
+  "application_aliases": [
+    "RRTV",
+    "Renren Video",
+    "Renrenshipin",
+    "人人視頻"
+  ],
+  "updated_at": "2026-10-22",
+  "latest_scope": "Latest versions currently included in this repository, not a guarantee of the vendor latest release.",
+  "latest_by_platform": {
+    "windows": "rrtv-windows-1.25.0",
+    "android": "rrtv-android-10.40.2",
+    "macos": "rrtv-mac"
+  },
+  "selection_rules": [
+    "Match the requested operating system first: windows, macos, or android. Ask for the platform if it is missing. The phrase computer/desktop version alone is ambiguous between Windows and macOS; ask which system.",
+    "For a requested version, match within the same operating system. Match Windows file_version when a four-component build is requested.",
+    "If no version is specified, resolve latest_by_platform for that operating system. Never compare version numbers across platforms or use the repository-wide releases/latest endpoint.",
+    "Download only the chosen record download_url; verify size_bytes and sha256. Do not substitute another platform or invent an unavailable version.",
+    "Unknown architectures and OS compatibility must remain unknown; do not infer application architecture from the installer architecture."
+  ],
   "files": [
+    {
+      "id": "rrtv-windows-1.25.0",
+      "name": "人人视频 Windows",
+      "aliases": [
+        "人人视频 Windows 版",
+        "RRTV Windows",
+        "Renren Video Windows"
+      ],
+      "os": "windows",
+      "platform": "Windows",
+      "version": "1.25.0",
+      "file_version": "1.25.0.19",
+      "product_version": "1.25.0.19",
+      "version_source": "Official website release version; PE file and product versions preserved separately",
+      "filename": "rrtv-windows-1.25.0.exe",
+      "original_filename": "RRClientSetup_win_rrsp_gw_1.25.0.exe",
+      "file_format": "exe",
+      "size_bytes": 171889248,
+      "sha256": "ec7464ab48b46a8c3bde9caeed4db2a32350657cf8e8af37a593241825d5d240",
+      "architectures": null,
+      "architecture_status": "unknown",
+      "installer_architecture": "x86",
+      "architecture_note": "Installer PE is x86; installed application architecture and Windows compatibility are not independently verified.",
+      "source_kind": "official_website",
+      "source_url": "https://rrsp.app/",
+      "source_download_url": "https://dlapp-new.jimihua.plus/pc/windows/1.25.0/RRClientSetup_win_rrsp_gw_1.25.0.exe",
+      "source_final_url": "https://dlapp-new.jimihua.plus/pc/windows/1.25.0/RRClientSetup_win_rrsp_gw_1.25.0.exe",
+      "source_api_url": "https://api.rrmj.plus/configs/lastest/package-url?ct=win_rrsp_gw",
+      "source_verified_at": "2026-10-22T02:25:45.769368+00:00",
+      "release_tag": "windows-v1.25.0",
+      "release_url": "https://github.com/yongdz/rrtv/releases/tag/windows-v1.25.0",
+      "download_url": "https://github.com/yongdz/rrtv/releases/download/windows-v1.25.0/rrtv-windows-1.25.0.exe"
+    },
+    {
+      "name": "人人视频 Android",
+      "aliases": [
+        "人人视频 安卓版",
+        "人人视频 Android 安装包",
+        "RRTV Android"
+      ],
+      "version": "10.40.2",
+      "platform": "Android",
+      "architectures": [
+        "arm64-v8a",
+        "armeabi-v7a"
+      ],
+      "filename": "rrtv-android-10.40.2.apk",
+      "original_filename": "RRSP_10.40.2_android_rrsp_xb_RRSP_signed.apk",
+      "size_bytes": 145168931,
+      "sha256": "5218e4a466e1aa186829a50e5a29dce92cec2c89151dfd45b32f0bed4d462a74",
+      "source_url": "https://rrsp.app/",
+      "source_download_url": "https://dlapp.rrsp.com.cn/android/rrsp/download/RRSP_10.40.2_android_rrsp_xb_RRSP_signed.apk",
+      "source_final_url": "https://dlapp.rrsp.com.cn/android/rrsp/download/RRSP_10.40.2_android_rrsp_xb_RRSP_signed.apk",
+      "id": "rrtv-android-10.40.2",
+      "os": "android",
+      "file_format": "apk",
+      "architecture_status": "verified",
+      "source_kind": "official_website",
+      "source_verified_at": "2026-10-22T02:25:03.900400+00:00",
+      "version_source": "APK AndroidManifest.xml",
+      "package_name": "com.example.pptv",
+      "version_code": 1040002,
+      "min_sdk": 24,
+      "target_sdk": 31,
+      "release_tag": "android-v10.40.2",
+      "release_url": "https://github.com/yongdz/rrtv/releases/tag/android-v10.40.2",
+      "download_url": "https://github.com/yongdz/rrtv/releases/download/android-v10.40.2/rrtv-android-10.40.2.apk"
+    },
     {
       "id": "rrtv-mac",
       "name": "人人视频 Mac",
@@ -18,7 +107,15 @@
       "size_bytes": 34598940,
       "sha256": "cfe5ff2841eb5969f921cc08b285f331162207291be9cff8bdb594d9ca70dc19",
       "download_url": "https://github.com/yongdz/rrtv/releases/download/v1.2.3/rrtv-mac-1.2.3.dmg",
-      "release_url": "https://github.com/yongdz/rrtv/releases/tag/v1.2.3"
+      "release_url": "https://github.com/yongdz/rrtv/releases/tag/v1.2.3",
+      "os": "macos",
+      "file_format": "dmg",
+      "architectures": null,
+      "architecture_status": "unknown",
+      "source_kind": "user_supplied_attachment",
+      "source_url": null,
+      "source_download_url": null,
+      "version_source": "Original attachment filename; application metadata not independently inspected"
     }
   ]
 }
