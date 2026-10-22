@@ -4,7 +4,29 @@
 
 项目地址：https://github.com/yongdz/rrtv · 官网：[rrsp.app](https://rrsp.app/) · [下载清单 JSON](https://raw.githubusercontent.com/yongdz/rrtv/main/downloads.json)
 
-一句话使用：**“从 GitHub 的 rrtv（人人视频下载）项目下载 Windows 版。”** 把 Windows 换成“安卓”或“Mac”即可。搜索存在同名项目时，以 **yongdz/rrtv** 或本页链接为准。
+## 推荐：安装本地 Skill
+
+建议先安装 [`rrtv-download`](skills/rrtv-download/SKILL.md) 到本地，让大模型固定读取本项目的下载清单，不再依赖搜索同名仓库。Skill 每次按系统和版本选包，下载后核对大小与 SHA-256；版本号不会写死在本地。
+
+**在 Codex 中复制这一句完成安装：**
+
+```text
+请使用 $skill-installer，将 https://github.com/yongdz/rrtv/tree/main/skills/rrtv-download 安装到本地。
+```
+
+安装后，下一轮对话即可说：**“下载人人视频 Windows 版。”** 把 Windows 换成“安卓”或“Mac”即可。需要明确指定 skill 时使用：
+
+```text
+使用 $rrtv-download 下载人人视频 Windows 版。
+```
+
+自然语言是否自动触发取决于所用工具；显式指定 `$rrtv-download` 可明确选用这个 skill。安装时固定仓库地址，之后的下载提示词无需反复写 `yongdz`。
+
+其他支持 `SKILL.md` 的工具可将仓库的 `skills/rrtv-download` 整个目录复制到该工具的用户级 skills 目录，按其方式加载。此 skill 不需要 API 密钥或额外 MCP；读取清单及下载附件需要联网。它只下载和校验安装包，不自动安装应用。
+
+仓库新增版本后，本地 skill 下次读取清单即可选到；skill 规则本身有更新时，再更新本地副本。
+
+**不安装 skill 也可以用：**“从 GitHub 的 yongdz/rrtv 项目下载人人视频 Windows 版。”
 
 ## 直接下载
 
